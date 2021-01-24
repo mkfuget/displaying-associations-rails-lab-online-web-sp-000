@@ -6,7 +6,7 @@
   </tr>
 <%= @songs.each do |song| %>
   <tr>
-    <td><%= link_to "#{song.artist_name} - #{song.title}, song_path(song) %></td>
+    <td><%= link_to "#{song.artist_name} - #{song.title}", song_path(song) %></td>
     <td><%= link_to song.title, song_path(song)%></td>
   </tr>
 <% end %>
