@@ -7,7 +7,7 @@
 <%= @artists.each do |artist| %>
   <tr>
     <td><%= link_to artist.name, artist_path(artist) %></td>
-    <td><%= artist.song_count %>
+    <td><%= artist.song_count %></td>
   </tr>
 <% end %>
 <table>
